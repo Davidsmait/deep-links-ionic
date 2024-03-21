@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Deeplinks} from "@awesome-cordova-plugins/deeplinks/ngx";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(private deepLinks: Deeplinks) {}
 }
