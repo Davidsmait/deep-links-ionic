@@ -1,3 +1,13 @@
 <ion-app>
   <ion-router-outlet></ion-router-outlet>
+  <ion-button (click)="setOpen(true)">Click Me</ion-button>
+
+  <ion-alert
+    [isOpen]="isAlertOpen"
+    header="Deep link"
+    subHeader="App link data"
+    [message]="message"
+    [buttons]="alertButtons"
+    (didDismiss)="setOpen(false)"
+  ></ion-alert>
 </ion-app>
